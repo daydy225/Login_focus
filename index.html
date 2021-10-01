@@ -71,6 +71,7 @@
                 name="name"
                 placeholder="name"
                 class="form-input"
+                required
               />
             </div>
             <label for="email">Email</label>
@@ -80,6 +81,8 @@
                 name="email"
                 placeholder="focus001@gmail.com"
                 class="form-input"
+                id="email"
+                required
               />
             </div>
             <label for="password">Password </label>
@@ -89,9 +92,22 @@
                 name="name"
                 placeholder="8+ characters"
                 class="form-input"
+                id="pwrd"
+                required
               />
             </div>
-            <input type="button" value="Login" onclick="" />
+            <label for="Cpassword">Confirm password </label>
+            <div class="section_form--input">
+              <input
+                type="password"
+                name="name"
+                placeholder="8+ characters"
+                class="form-input"
+                id="cpwrd"
+                required
+              />
+            </div>
+            <input type="button" value="Login" onclick="" id="btn" required />
           </form>
           <div class="icon-bas">
             <p>Create an account with</p>
