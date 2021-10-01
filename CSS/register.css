@@ -1,0 +1,206 @@
+@import url("Style-generale.css");
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+section.gauche {
+  flex: 1;
+  background-color: #f5f5f5;
+  /* height: 100vh; */
+  position: relative;
+}
+
+section.droite {
+  flex: 1;
+  /* height: 100vh; */
+}
+
+@media (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  section.gauche {
+    flex: 1;
+    height: 100vh;
+    position: relative;
+  }
+  section.droite {
+    flex: 1;
+    height: 100vh;
+  }
+}
+
+/*####################### SECTION GAUCHE ##################*/
+.logo {
+  display: block;
+  left: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  width: 100px;
+  z-index: 2;
+}
+.rafiki {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding: 4em;
+  width: 400px;
+}
+.icon-media {
+  width: 110px;
+}
+@media (min-width: 600px) {
+  .logo {
+    display: block;
+    left: 3rem;
+    position: absolute;
+    top: 1rem;
+    width: 200px;
+    z-index: 2;
+  }
+  .rafiki {
+    display: block;
+    height: auto;
+    left: 4rem;
+    margin: auto;
+    max-width: 100%;
+    position: absolute;
+    top: 10rem;
+    width: 600px;
+  }
+  .icon-media {
+    width: 180px;
+  }
+}
+
+/*################### SECTION DROITE ############################*/
+.ht-droite {
+  align-items: center;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 300;
+  justify-content: flex-end;
+  margin-right: 2em;
+  margin-top: 1em;
+}
+.ht-droite a {
+  border-radius: 50px;
+  border: 2px solid var(--color-whiteblue);
+  color: inherit;
+  margin-left: 1.3em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.ht-droite a:hover {
+  color: var(--bg-color);
+  background-color: var(--color-blue);
+  font-weight: 600;
+  border: 0;
+}
+@media (min-width: 600px) {
+  .ht-droite {
+    font-size: 1.5rem;
+  }
+  .ht-droite a {
+    padding: 0.5em 1.4em;
+  }
+}
+
+.section_form--group {
+  font-size: 1.2rem;
+  line-height: 2.5em;
+  margin: 1em 3em;
+  max-width: 500px;
+}
+
+.section_form--group > h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--color-blue);
+  margin-bottom: 0;
+}
+
+.section_form--group > p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--color-gray);
+}
+
+@media (min-width: 600px) {
+  .section_form--group {
+    margin: 1em 4em;
+    font-size: 1.8rem;
+    line-height: 2em;
+  }
+  .section_form--group > h1 {
+    font-size: 3.5rem;
+  }
+  .section_form--group > p {
+    font-size: 1.5rem;
+  }
+}
+
+.section_form--input {
+  border: 2px solid #808080;
+  border-radius: 10px;
+}
+.form-input {
+  border-radius: inherit;
+  border: 0;
+  font-size: inherit;
+  min-height: 30px;
+  outline: 0;
+  padding: 0.8rem 0 0.8rem 1rem;
+  width: 100%;
+}
+label {
+  color: var(--color-blue);
+  font-weight: 600;
+}
+
+.form-input:focus {
+  outline: 3px solid #221980;
+}
+
+input[type="button"] {
+  background-color: var(--color-blue);
+  border-radius: 50px;
+  border: 0px solid;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 1.5em;
+  outline: none;
+  padding: 1em 3.5em;
+}
+
+input[type="button"]:hover {
+  transform: scale(0.95, 0.95);
+}
+@media (min-width: 600px) {
+  input[type="button"] {
+    font-size: 1.8rem;
+  }
+}
+div.icon-bas {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+}
+
+div.icon-bas > p {
+  font-size: 1rem;
+  margin-right: 1.5em;
+  font-weight: 300;
+}
+@media (min-width: 600px) {
+  div.icon-bas > p {
+    font-size: 1.6rem;
+  }
+}

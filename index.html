@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="CSS/register.css" />
     <title>Register page</title>
   </head>
   <body>
@@ -60,44 +60,41 @@
           <p>Already an account?</p>
           <a href="#">sign up</a>
         </div>
-        <div class="form-group">
+        <div class="section_form--group">
           <h1>Welcome to Focus!</h1>
           <p>register your account</p>
           <form action="">
-            <label for="name"
-              >Name <br />
+            <label for="name">Name </label>
+            <div class="section_form--input">
               <input
                 type="text"
                 name="name"
                 placeholder="name"
                 class="form-input"
               />
-            </label>
-            <br />
-            <label for="name"
-              >Email <br />
+            </div>
+            <label for="email">Email</label>
+            <div class="section_form--input">
               <input
                 type="email"
                 name="email"
                 placeholder="focus001@gmail.com"
                 class="form-input"
               />
-            </label>
-            <br />
-            <label for="password"
-              >Password <br />
+            </div>
+            <label for="password">Password </label>
+            <div class="section_form--input">
               <input
                 type="password"
                 name="name"
                 placeholder="8+ characters"
                 class="form-input"
               />
-            </label>
-            <br />
+            </div>
             <input type="button" value="Login" onclick="" />
           </form>
           <div class="icon-bas">
-            <p>Create an account width</p>
+            <p>Create an account with</p>
             <img
               src="Images/Social-media_icons.png"
               alt="Social media icon"
@@ -107,5 +104,6 @@
         </div>
       </section>
     </div>
+    <script src="JS/main.js"></script>
   </body>
 </html>
