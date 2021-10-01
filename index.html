@@ -63,7 +63,7 @@
         <div class="section_form--group">
           <h1>Welcome to Focus!</h1>
           <p>register your account</p>
-          <form action="">
+          <form action="" onsubmit="verif()">
             <label for="name">Name </label>
             <div class="section_form--input">
               <input
@@ -71,6 +71,7 @@
                 name="name"
                 placeholder="name"
                 class="form-input"
+                id="name"
                 required
               />
             </div>
@@ -89,7 +90,7 @@
             <div class="section_form--input">
               <input
                 type="password"
-                name="name"
+                name="password"
                 placeholder="8+ characters"
                 class="form-input"
                 id="pwrd"
@@ -107,7 +108,7 @@
                 required
               />
             </div>
-            <input type="button" value="Login" onclick="" id="btn" required />
+            <input type="submit" value="Login" id="btn" />
           </form>
           <div class="icon-bas">
             <p>Create an account with</p>
