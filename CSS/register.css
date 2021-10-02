@@ -42,6 +42,74 @@ section.droite {
   width: 100px;
   z-index: 2;
 }
+.losange-blue,
+.losange1-blue,
+.losange2-blue,
+.losange3-blue,
+.losange-vide,
+.losange1-vide,
+.losange2-vide,
+.losange3-vide {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 18px;
+}
+
+.losange-blue {
+  position: absolute;
+  top: 5em;
+  left: 5em;
+}
+
+.losange1-blue {
+  position: absolute;
+  right: 5em;
+  top: 5em;
+}
+
+.losange2-blue {
+  position: absolute;
+  bottom: 2em;
+  left: 8em;
+}
+
+.losange3-blue {
+  position: absolute;
+  right: 18em;
+  bottom: 5em;
+}
+
+.losange-vide {
+  position: absolute;
+  top: 0;
+  left: 18em;
+}
+
+.losange1-vide {
+  position: absolute;
+  top: 5em;
+  right: 15em;
+}
+
+.losange2-vide {
+  position: absolute;
+  bottom: 8em;
+  right: 6em;
+}
+
+.losange3-vide {
+  position: absolute;
+  bottom: 10em;
+  left: 5em;
+}
+
+/*
+.losange3-vide {
+  position: absolute;
+  bottom: 3em;
+  right: 18em;
+} */
 .rafiki {
   display: block;
   margin: auto;
@@ -57,8 +125,8 @@ section.droite {
     display: block;
     left: 3rem;
     position: absolute;
-    top: 1rem;
-    width: 200px;
+    top: 3rem;
+    width: 160px;
     z-index: 2;
   }
   .rafiki {
@@ -70,6 +138,55 @@ section.droite {
     position: absolute;
     top: 10rem;
     width: 600px;
+  }
+  .losange-blue,
+  .losange1-blue,
+  .losange2-blue,
+  .losange3-blue,
+  .losange-vide,
+  .losange1-vide,
+  .losange2-vide,
+  .losange3-vide {
+    width: 100%;
+  }
+  .losange-blue {
+    position: absolute;
+    top: 18em;
+    left: 15em;
+  }
+  .losange1-blue {
+    position: absolute;
+    right: 17em;
+    top: 10em;
+  }
+  .losange2-blue {
+    position: absolute;
+    bottom: 15em;
+    left: 25em;
+  }
+  .losange3-blue {
+    position: absolute;
+    bottom: 8em;
+  }
+  .losange-vide {
+    position: absolute;
+    top: 8em;
+    left: 30em;
+  }
+  .losange1-vide {
+    position: absolute;
+    top: 5em;
+    right: 10em;
+  }
+  .losange2-vide {
+    position: absolute;
+    bottom: 13em;
+    right: 28em;
+  }
+  .losange3-vide {
+    position: absolute;
+    bottom: 3em;
+    right: 18em;
   }
   .icon-media {
     width: 180px;
@@ -201,6 +318,7 @@ div.icon-bas > p {
   font-size: 1rem;
   margin-right: 1.5em;
   font-weight: 300;
+  color: var(--color-gray);
 }
 @media (min-width: 600px) {
   div.icon-bas {
