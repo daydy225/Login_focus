@@ -40,7 +40,7 @@ section.droite {
   position: absolute;
   top: 1rem;
   width: 100px;
-  z-index: 2;
+  z-index: 5;
 }
 .losange-blue,
 .losange1-blue,
@@ -54,6 +54,7 @@ section.droite {
   position: absolute;
   bottom: 0;
   width: 18px;
+  z-index: 1;
 }
 
 .losange-blue {
