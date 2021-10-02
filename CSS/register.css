@@ -182,8 +182,9 @@ input[type="submit"] {
   padding: 1em 3.5em;
 }
 
-input[type="button"]:hover {
-  transform: scale(0.95, 0.95);
+input[type="submit"]:hover {
+  transform: scale(1.1);
+  font-size: 1.3rem;
 }
 @media (min-width: 600px) {
   input[type="button"] {
